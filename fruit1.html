@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* General Body Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Container for the product card */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    /* Styling the product card */
+    .product-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+    }
+    
+    /* Product Image */
+    .product-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    /* Product Title */
+    .product-title {
+        font-size: 24px;
+        margin: 15px 0;
+        color: #333;
+    }
+    
+    /* Product Description */
+    .product-description {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 15px;
+    }
+    
+    /* Product Price */
+    .product-price {
+        font-size: 20px;
+        color: #e74c3c;
+        margin-bottom: 20px;
+    }
+    
+    /* Buy Now Button */
+    .buy-now-button {
+        background-color: #27ae60;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .buy-now-button:hover {
+        background-color: #2ecc71;
+    }
+    
+    .buy-now-button:active {
+        background-color: #16a085;
+    }
+    </style>
+<body>
+    <div class="container">
+        <div class="product-card">
+            <img src="https://lh3.googleusercontent.com/proxy/8D9AP5pUinAxSWKN0KtFSneETstXeR3V-MvEfu6Jyx4Z53zazqjvS-mKmg-fEd6IMi_LZ8o0qKvoucnL2dLofF92D3LiqWvuHPv26g0MvMG-oBw" alt="Product Image" class="product-image">
+            <h1 class="product-title">Awesome Product</h1>
+            <p class="product-description">This is a fantastic product that will change your life. It's great for all your needs and comes with amazing features.</p>
+            <p class="product-price">₹2000</p>
+            <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        </div>
+    </div>
+
+    <script src="script.js">function buyNow() {
+        alert("Thank you for your purchase! Your order is being processed.");
+    }
+    </script>
+</body>
+</html>
